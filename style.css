@@ -1,0 +1,80 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    /* width: 1440px; */
+    background-color: hsl(212, 45%, 89%);
+    font-family:'Outfit', sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px hsl(220, 15%, 55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container img{
+    margin-top: 15px;
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.container .prg-container{
+    width: 250px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.container .prg-container .prg{
+    margin: auto;
+    text-align: center;
+}
+.container .prg-container .prg1{
+    font-weight:700;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.container .prg-container .prg2{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width:375px){
+    .container{
+        width: 270px;
+        height: 420px;
+        border-radius: 12px;
+    }
+
+    .container img{
+        margin-top: 12px;
+        width: 240px;
+        height: 240px;
+        border-radius: 7px;
+    }
+
+    .container .prg-container{
+        width: 240px;
+    }
+
+    .container .prg-container .prg1{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .container .prg-container .prg2{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
